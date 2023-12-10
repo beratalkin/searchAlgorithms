@@ -75,7 +75,7 @@ function animate(value) {
     function frame() {
         let element = document.getElementById(result[index++].toString());
         if (index == length) {
-            if (result[result.length - 1] == goalTextField.value) {
+            if ((result[result.length - 1] == goalTextField.value) || value == 2) {
                 element.style.backgroundColor = "green";
             }else{
                 element.style.backgroundColor = "red";
